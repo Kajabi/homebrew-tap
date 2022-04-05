@@ -9,16 +9,16 @@ class Kajabi < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "7d42811516457e8e64ca82f4545dbfa7282662f537c89115c668729a3d2d8fb8"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Darwin_arm64.tar.gz"
+      sha256 "1b7fafd03ab99d2db863a0af119890824325f0b67823ac962cb35004fbdfd645"
 
       def install
         bin.install "kajabi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "f67014d20f0ad5249d86c49bc298742a59c668e1eda34b8705719bb64f2723ca"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Darwin_x86_64.tar.gz"
+      sha256 "3dfa725915283169cd319731b6c218a1d1990edf73be5ab3f75e66ce21a101ae"
 
       def install
         bin.install "kajabi"
@@ -28,16 +28,16 @@ class Kajabi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_0.0.5_Linux_arm64.tar.gz"
-      sha256 "fcb81e6eee2711bd34fa9eff3b784dba095882b71537e59a8e9d08f0f7576dce"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Linux_arm64.tar.gz"
+      sha256 "640473ad21ce4f8d84801528b92d2b11c51ee042d49d68ba232483ce48b3aa4f"
 
       def install
         bin.install "kajabi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "c2ca3cbc036a24a78c7faf03255a68ed49da053e94800e8871b6e0b0e714c0e5"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Linux_x86_64.tar.gz"
+      sha256 "ff644ca3281d1e0aa614d9058228243b79b3bde19de1b032b1a4eb315d7445f5"
 
       def install
         bin.install "kajabi"
