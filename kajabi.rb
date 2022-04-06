@@ -5,20 +5,20 @@
 class Kajabi < Formula
   desc "The Kajabi CLI"
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Darwin_arm64.tar.gz"
-      sha256 "1b7fafd03ab99d2db863a0af119890824325f0b67823ac962cb35004fbdfd645"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.6/kajabi_Darwin_arm64.tar.gz"
+      sha256 "1f2d0d4a07c4b2e0cf6bed31ec2ad1f7c8515e12764cb0af2b774dc4ca85a8a6"
 
       def install
         bin.install "kajabi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Darwin_x86_64.tar.gz"
-      sha256 "3dfa725915283169cd319731b6c218a1d1990edf73be5ab3f75e66ce21a101ae"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.6/kajabi_Darwin_x86_64.tar.gz"
+      sha256 "36620713f83d1b72d5eb1322e31ba2920ddb2e7e56443d18ea4fdd946f117562"
 
       def install
         bin.install "kajabi"
@@ -28,16 +28,16 @@ class Kajabi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Linux_arm64.tar.gz"
-      sha256 "640473ad21ce4f8d84801528b92d2b11c51ee042d49d68ba232483ce48b3aa4f"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.6/kajabi_Linux_arm64.tar.gz"
+      sha256 "4ce3da9ac3284f46a4ddd8e7a4d091e86d956f22c74c14fceb9a90887b712992"
 
       def install
         bin.install "kajabi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.5/kajabi_Linux_x86_64.tar.gz"
-      sha256 "ff644ca3281d1e0aa614d9058228243b79b3bde19de1b032b1a4eb315d7445f5"
+      url "https://github.com/kajabi/kajabi-cli/releases/download/cli-0.0.6/kajabi_Linux_x86_64.tar.gz"
+      sha256 "519968c77b8db4c2bfb8c424c98f4876fccd844728779a63fe84bcac43ce206e"
 
       def install
         bin.install "kajabi"
